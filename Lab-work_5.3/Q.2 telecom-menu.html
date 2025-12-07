@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telecom menu</title>
+</head>
+
+<body>
+    <h2>Q.2 Telecom menu</h2>
+
+    <!-- telecom menu switch case nested -->
+    <script>
+        let language = +prompt(
+            "Press 1 for English\nPress 2 for Hindi\nPress 3 for Gujarati"
+        );
+
+        switch (language) {
+
+            case 1: // English
+                let english = +prompt(
+                    "Press 1 for Internet Recharge\nPress 2 for Top-up Recharge\nPress 3 for Special Recharge"
+                );
+
+                switch (english) {
+                    case 1:
+                        document.write("You have successfully done an Internet Recharge.");
+                        break;
+                    case 2:
+                        document.write("You have successfully done a Top-up Recharge.");
+                        break;
+                    case 3:
+                        document.write("You have successfully done a Special Recharge.");
+                        break;
+                    default:
+                        document.write("Invalid option in English menu");
+                }
+                break;
+
+            case 2: // Hindi
+                let hindi = +prompt(
+                    "Internet Recharge ke liye 1 dabaiye\nTop-up Recharge ke liye 2 dabaiye\nSpecial Recharge ke liye 3 dabaiye"
+                );
+
+                switch (hindi) {
+                    case 1:
+                        document.write("Aapne safaltapurvak Internet Recharge kar liya he.");
+                        break;
+                    case 2:
+                        document.write("Aapne safaltapurvak Top-up Recharge kar liya he.");
+                        break;
+                    case 3:
+                        document.write("Aapne safaltapurvak Special Recharge kar liya he.");
+                        break;
+                    default:
+                        document.write("Hindi menu me invalid option");
+                }
+                break;
+
+            case 3: // Gujarati
+                let gujrati = +prompt(
+                    "Internet Recharge mate 1 dabavo\nTop-up Recharge mate 2 dabavo\nSpecial Recharge mate 3 dabavo"
+                );
+
+                switch (gujrati) {
+                    case 1:
+                        document.write("Tame safaltapurvak Internet Recharge karyu chhe.");
+                        break;
+                    case 2:
+                        document.write("Tame safaltapurvak Top-up Recharge karyu chhe.");
+                        break;
+                    case 3:
+                        document.write("Tame safaltapurvak Special Recharge karyu chhe.");
+                        break;
+                    default:
+                        document.write("Gujarati menu ma invalid option");
+                }
+                break;
+
+            default:
+                document.write("Invalid Language Choice!");
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
