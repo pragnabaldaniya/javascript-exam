@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimum</title>
+</head>
+
+<body>
+    <h2>Q.1 Minimum number find</h2>
+
+    <!-- minimum number find using nasted if else -->
+    <script>
+        let a = +prompt("Enter first number :");
+        let b = +prompt("Enter second number:");
+        let c = +prompt("Enter third number:");
+
+        console.log(`A : ${a}`);
+        console.log(`B : ${b}`);
+        console.log(`C : ${c}`);
+
+        document.write("A :", a, "<br>");
+        document.write("B :", b, "<br>");
+        document.write("C :", c, "<br>");
+
+        let min;
+
+        if (a < b) {
+            if (a < c) {
+                min = a;
+            } else {
+                min = c;
+            }
+        } else {
+            if (b < c) {
+                min = b;
+            } else {
+                min = c;
+            }
+        }
+
+        console.log("The minimum value is: ", min);
+        document.write("The minimum value is: ", min);
+
+    </script>
+
+</body>
+
+</html>

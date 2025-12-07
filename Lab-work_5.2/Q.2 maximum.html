@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimum</title>
+</head>
+
+<body>
+    <h2>Q.2 Maximum number find</h2>
+
+    <!-- maximum number find using nasted if else -->
+    <script>
+        let a = +prompt("Enter first number :");
+        let b = +prompt("Enter second number:");
+        let c = +prompt("Enter third number:");
+        let d = +prompt("Enter four number:");
+
+        console.log(`A : ${a}`);
+        console.log(`B : ${b}`);
+        console.log(`C : ${c}`);
+        console.log(`D : ${d}`);
+
+        document.write("A :", a, "<br>");
+        document.write("B :", b, "<br>");
+        document.write("C :", c, "<br>");
+        document.write("D :", d, "<br>");
+
+        let max;
+
+        // First compare a & b
+        if (a > b) {
+
+            // Now compare a with c
+            if (a > c) {
+
+                // Now compare a with d
+                if (a > d) {
+                    max = a;
+                } else {
+                    max = d;
+                }
+
+            } else {   // c >= a
+
+                // Compare c with d
+                if (c > d) {
+                    max = c;
+                } else {
+                    max = d;
+                }
+            }
+
+        } else {   // b >= a
+
+            // Compare b with c
+            if (b > c) {
+
+                // Compare b with d
+                if (b > d) {
+                    max = b;
+                } else {
+                    max = d;
+                }
+
+            } else {  // c >= b
+
+                // Compare c with d
+                if (c > d) {
+                    max = c;
+                } else {
+                    max = d;
+                }
+            }
+        }
+
+        console.log("The maximum value is: ", max);
+        document.write("The maximum value is: ", max);
+
+    </script>
+
+</body>
+
+</html>
