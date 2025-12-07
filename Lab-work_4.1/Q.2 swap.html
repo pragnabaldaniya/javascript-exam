@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swaping Program</title>
+</head>
+
+<body>
+    <h2>Q.2 swaping without using third variable</h2>
+    <script>
+
+        let a = +prompt("Enter first number A : ");
+        let b = +prompt("Enter second number B : ");
+
+        //without using third variable....
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        console.log("A : ", a);
+        console.log("B : ", b);
+
+        document.write("<h3>Swaping Program</h3>")
+        document.write("A : ", a, "<br>");
+        document.write("B : ", b);
+
+    </script>
+
+</body>
+
+</html>
