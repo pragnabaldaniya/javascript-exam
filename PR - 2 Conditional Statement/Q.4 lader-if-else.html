@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lader-if-else</title>
+</head>
+
+<body>
+    <h2>Q.4 Lader-if-else</h2>
+
+    <script>
+        let a = +prompt("Enter 1st number:");
+        let b = +prompt("Enter 2nd number:");
+        let c = +prompt("Enter 3rd number:");
+        let d = +prompt("Enter 4th number:");
+
+        document.write(`A is : ${a} <br>`);
+        document.write(`B is : ${b} <br>`);
+        document.write(`C is : ${c} <br>`);
+        document.write(`D is : ${d} <br><br>`);
+
+        if (a >= b && a >= c && a >= d) {
+            document.write(a, " is Greatest");
+        }
+        else if (b >= a && b >= c && b >= d) {
+            document.write(b, " is Greatest");
+        }
+        else if (c >= a && c >= b && c >= d) {
+            document.write(c, " is Greatest");
+        }
+        else {
+            document.write(d, " is Greatest");
+        }
+    </script>
+
+
+</body>
+
+</html>

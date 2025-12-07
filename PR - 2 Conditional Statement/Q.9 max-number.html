@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Number</title>
+</head>
+
+<body>
+    <h2>Max Number Find</h2>
+
+    <script>
+
+        let a = +prompt("Enter number 1:");
+        let b = +prompt("Enter number 2:");
+        let c = +prompt("Enter number 3:");
+        let d = +prompt("Enter number 4:");
+        let e = +prompt("Enter number 5:");
+
+        let max;
+
+        if (a > b) {
+            if (a > c) {
+                if (a > d) {
+                    if (a > e) {
+                        max = a;
+                    } else {
+                        max = e;
+                    }
+                } else {
+                    if (d > e) {
+                        max = d;
+                    } else {
+                        max = e;
+                    }
+                }
+            } else {
+                if (c > d) {
+                    if (c > e) {
+                        max = c;
+                    } else {
+                        max = e;
+                    }
+                } else {
+                    if (d > e) {
+                        max = d;
+                    } else {
+                        max = e;
+                    }
+                }
+            }
+        }
+        else {
+            if (b > c) {
+                if (b > d) {
+                    if (b > e) {
+                        max = b;
+                    } else {
+                        max = e;
+                    }
+                } else {
+                    if (d > e) {
+                        max = d;
+                    } else {
+                        max = e;
+                    }
+                }
+            } else {
+                if (c > d) {
+                    if (c > e) {
+                        max = c;
+                    } else {
+                        max = e;
+                    }
+                } else {
+                    if (d > e) {
+                        max = d;
+                    } else {
+                        max = e;
+                    }
+                }
+            }
+        }
+
+        document.write("Maximum number is: " + max);
+
+
+
+    </script>
+
+</body>
+
+</html>

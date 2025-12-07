@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap year program</title>
+</head>
+
+<body>
+    <h2>Q.3 Leap year </h2>
+    <script>
+        let year = +prompt("Enter any year : ");
+
+        if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+            document.write(year + " is a Leap Year");
+        } else {
+            document.write(year + " is Not a Leap Year");
+        }
+    </script>
+
+
+</body>
+
+</html>

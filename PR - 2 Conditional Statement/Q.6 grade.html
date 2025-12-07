@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marke & Grade</title>
+</head>
+
+<body>
+    <h2>Q.6 Marke & Grade</h2>
+
+    <script>
+        let phy = +prompt("Enter Physics marks:");
+        let chem = +prompt("Enter Chemistry marks:");
+        let bio = +prompt("Enter Biology marks:");
+        let math = +prompt("Enter Mathematics marks:");
+        let comp = +prompt("Enter Computer marks:");
+
+        let total = phy + chem + bio + math + comp;
+        let marks = (total / 500) * 100;
+
+        document.write("Percentage: " + marks + "%<br>");
+
+        if (marks >= 90) {
+            document.write("Grade: A");
+        }
+        else if (marks >= 80) {
+            document.write("Grade: B");
+        }
+        else if (marks >= 70) {
+            document.write("Grade: C");
+        }
+        else if (marks >= 60) {
+            document.write("Grade: D");
+        }
+        else if (marks >= 50) {
+            document.write("Grade: E");
+        }
+        else if (marks >= 40) {
+            document.write("Grade: F");
+        }
+        else {
+            document.write("Fail");
+        }
+    </script>
+
+
+</body>
+
+</html>

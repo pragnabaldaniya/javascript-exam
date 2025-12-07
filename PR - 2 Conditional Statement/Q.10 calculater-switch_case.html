@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h2>Q.10 Calculator Switc-case</h2>
+    <script>
+        let a = +prompt("Enter first number:");
+        let b = +prompt("Enter second number:");
+        let ch = prompt("Enter choice (+, -, *, /):");
+
+        let ans;
+
+        switch (ch) {
+            case "+":
+                ans = a + b;
+                break;
+
+            case "-":
+                ans = a - b;
+                break;
+
+            case "*":
+                ans = a * b;
+                break;
+
+            case "/":
+                ans = a / b;
+                break;
+
+            default:
+                ans = "Invalid Choice";
+        }
+
+        document.write("Answer = ", ans);
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
