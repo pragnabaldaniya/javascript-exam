@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+
+<body>
+    <h2>Q.3 Leap year </h2>
+    <script>
+        let start = +prompt("Enter the first number : ");
+        let end = +prompt("Enter the last number : ");
+
+        let year = start;
+
+        while (start <= end) {
+            if (start % 4 === 0 && start % 100 !== 0 || (start % 400 === 0)) {
+                console.log(start);
+            }
+            start++;
+        }
+    </script>
+</body>
+
+</html>
