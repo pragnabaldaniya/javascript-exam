@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonasi</title>
+</head>
+
+<body>
+    <h2>Q.4 Fibonasi</h2>
+    <!-- fibonaciprint -->
+    <script>
+        let n = +prompt("Enter any number:");
+        let a = 0, b = 1;
+        let result = "";
+
+        for (let i = 1; i <= n; i++) {
+            result += a;
+            if (i < n) result += ", ";
+
+            let next = a + b;
+            a = b;
+            b = next;
+        }
+
+        console.log(result);
+
+    </script>
+
+</body>
+
+</html>
