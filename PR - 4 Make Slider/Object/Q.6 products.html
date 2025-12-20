@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+
+<body>
+    <h2>Q.6 Products Object</h2>
+    <script>
+        console.log("Products Object...");
+        // Array of product objects
+        let products = [
+            {
+                name: "Laptop",
+                price: 50000,
+                quantity: 2
+            },
+            {
+                name: "Phone",
+                price: 15000,
+                quantity: 5
+            },
+            {
+                name: "Tablet",
+                price: 30000,
+                quantity: 3
+            },
+        ]
+        console.log(products);
+
+        // Total stock value calculate
+        let totalValue = 0;
+        for (let i = 0; i < products.length; i++) {
+            totalValue += products[i].price * products[i].quantity;
+        }
+
+        // Print total stock value
+        console.log("Total Stock Value: ", totalValue);
+
+    </script>
+</body>
+
+</html>
