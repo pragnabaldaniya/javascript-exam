@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1D array</title>
+</head>
+
+<body>
+    <h2>Q.1 sum 1D array using udf</h2>
+    <script>
+        // User Defined Function to calculate sum
+        function sumArray(arr) {
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            return sum;
+        }
+
+        // User input for array size
+        let size = +prompt("Enter array size: ");
+        console.log("Enter array size: ", size);
+
+        let array = [];
+
+        // User input for array elements
+        for (let i = 0; i < size; i++) {
+            array[i] = +prompt("Enter element a[" + i + "]: ");
+            console.log("Enter element a[" + i + "]: ", array[i]);
+        }
+
+        // Call function and print sum
+        let total = sumArray(array);
+        console.log("Output: The sum of an Array: ", total);
+    </script>
+</body>
+
+</html>
