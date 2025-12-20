@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting</title>
+</head>
+
+<body>
+    <h2>Q.10 Eligible Voting</h2>
+
+    <!-- Eligible voting not voting using all function  -->
+    <script>
+
+        // 1. TNRN
+        console.log("1. TNRN...");
+        function vote1() {
+            let age = 20;
+
+            if (age >= 18)
+                console.log(age, "Age Eligible for Voting !!");
+            else {
+                console.log(age, "Age Eligible for Not Voting !!");
+            }
+        }
+        // function call 
+        vote1();
+
+        // 2. TSRN 
+        console.log("2. TSRN...");
+        function vote2(age) {
+            if (age >= 18)
+                console.log(age, "Age Eligible for Voting !!");
+            else {
+                console.log(age, "Age Eligible for Not Voting !!");
+            }
+        }
+        // function call 
+        vote2(15);
+
+        // 3. TNRS 
+        console.log("3. TNRS...");
+        function vote3() {
+            let age = 39;
+
+            if (age >= 18) {
+                return ` ${age} Age Eligible for Voting !!`
+            } else {
+                return ` ${age} Age Eligible for Not Voting !!`
+            }
+        }
+        // function call 
+        console.log(vote3());
+
+
+        // 4. TSRS 
+        console.log("4. TSRS...");
+        function vote4(age) {
+
+            if (age >= 18) {
+                return ` ${age} Age Eligible for Voting !!`
+            } else {
+                return ` ${age} Age Eligible for Not Voting !!`
+            }
+        }
+        // function call 
+        console.log(vote4(12));
+
+
+
+    </script>
+</body>
+
+</html>

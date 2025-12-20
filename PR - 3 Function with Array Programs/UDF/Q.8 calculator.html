@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h2>Q.8 Calculator switch case</h2>
+
+    <script>
+        // Basic Calculator using switch case with user input
+
+        function calculator() {
+            let a = +prompt("Enter first number:");
+            let b = +prompt("Enter second number:");
+            let choice = prompt("Select choice (+ , - , * , /):");
+
+            console.log("A :", a);
+            console.log("B :", b);
+
+            let ans;
+
+            switch (choice) {
+                case '+':
+                    ans = a + b;
+                    break;
+                case '-':
+                    ans = a - b;
+                    break;
+                case '*':
+                    ans = a * b;
+                    break;
+                case '/':
+                    ans = a / b;
+                    break;
+                default:
+                    ans = "Invalid choice";
+            }
+
+            return ans;
+        }
+
+        // function call (NO arguments)
+        let result = calculator();
+        console.log("Answer =", result);
+    </script>
+</body>
+
+</html>

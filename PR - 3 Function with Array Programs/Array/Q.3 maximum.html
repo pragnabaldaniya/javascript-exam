@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum</title>
+</head>
+
+<body>
+    <h2>Q.3 Maximum</h2>
+    <script>
+        //maximum element in array
+        console.log("Maximum...");
+        let arr = new Array(10, 25, 5, 40, 18);
+        console.log(arr);
+
+
+        let max = arr[0];
+
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+
+        console.log("Maximum element is:", max);
+
+
+
+
+    </script>
+</body>
+
+</html>

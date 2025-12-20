@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minimum</title>
+</head>
+
+<body>
+    <h2>Q.4 Minimum</h2>
+
+    <script>
+        //minimum element in array
+        console.log("Minimum...");
+        let arr = new Array(10, 25, 5, 40, 18);
+        console.log(arr);
+
+
+        let min = arr[0];
+
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+
+        console.log("Minimum element is:", min);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest</title>
+</head>
+
+<body>
+    <h2>Q.2 Largest</h2>
+    <script>
+        // largest element find array  
+        console.log("Largest element...");
+
+        let arr = new Array(10, 20, 50, 60, 40, 70, 80);
+        console.log(arr);
+
+        let largest = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+
+            if (arr[i] > largest) {
+                largest = arr[i];
+            }
+        }
+        console.log("Largest element is:", largest);
+
+
+    </script>
+
+</body>
+
+</html>

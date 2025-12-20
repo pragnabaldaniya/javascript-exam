@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greatest2</title>
+</head>
+
+<body>
+    <h2>Q.4 Gratest2</h2>
+    <!-- greatest using udf no return -->
+    <script>
+        function findGreatest(a, b, c, d) {
+            console.log("a =", a);
+            console.log("b =", b);
+            console.log("c =", c);
+            console.log("d =", d);
+            
+            if (a > b && a > c && a > d) {
+                console.log("Greatest number is:", a);
+            }
+            else if (b > a && b > c && b > d) {
+                console.log("Greatest number is:", b);
+            }
+            else if (c > a && c > b && c > d) {
+                console.log("Greatest number is:", c);
+            }
+            else {
+                console.log("Greatest number is:", d);
+            }
+        }
+
+        // single function call
+        findGreatest(12, 45, 30, 20);
+
+    </script>
+</body>
+
+</html>
