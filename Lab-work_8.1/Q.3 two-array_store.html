@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h2>Q.3 two 1D array store another array</h2>
+    <script>
+        let size = +prompt("Enter array size: ");
+        console.log("Enter array size: " , size);
+
+        let arrayA = [];
+        let arrayB = [];
+        let arrayC = [];
+
+        // Input array A
+        console.log("Enter array A's elements:");
+        for (let i = 0; i < size; i++) {
+            arrayA[i] = +prompt("a[" + i + "] = ");
+            console.log("a[" + i + "] = " , arrayA[i]);
+        }
+
+        // Input array B
+        console.log("Enter array B's elements:");
+        for (let i = 0; i < size; i++) {
+            arrayB[i] = +prompt("b[" + i + "] = ");
+            console.log("b[" + i + "] = " , arrayB[i]);
+        }
+
+        // Add arrays and store in C
+        for (let i = 0; i < size; i++) {
+            arrayC[i] = arrayA[i] + arrayB[i];
+        }
+
+        console.log("Output: Array C is: " , arrayC.join(", "));
+    </script>
+</body>
+
+</html>

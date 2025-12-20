@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>length-find</title>
+</head>
+
+<body>
+    <h2>Q.1 length-find 1D array</h2>
+    <script>
+        // User input for array size
+        let size = +prompt("Enter array size: ");
+        console.log("Enter array size: ", size);
+
+        let array = [];
+
+        // User input for array elements
+        for (let i = 0; i < size; i++) {
+            array[i] = +prompt("Enter element a[" + i + "]: ");
+            console.log("Element is a[" + i + "] = ", array[i]);
+        }
+
+        // Print length
+        console.log("Output: Length of an Array: ", array.length);
+    </script>
+</body>
+
+</html>
