@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marg-array</title>
+</head>
+
+<body>
+    <h2>Q.1 Two Array Marg</h2>
+    <script>
+
+        let arrayA = [];
+        let arrayB = [];
+
+        let size1 = +prompt("Enter array sizeA: ");
+        console.log("Enter array size A': ", size1);
+
+        // Input array A
+        console.log("Enter array A's elements:");
+        for (let i = 0; i < size1; i++) {
+            arrayA[i] = +prompt("a[" + i + "] = ");
+            console.log("a[" + i + "] = ", arrayA[i]);
+        }
+
+        let size2 = +prompt("Enter array sizeB: ");
+        console.log("Enter array size B': ", size2);
+
+        // Input array B
+        console.log("Enter array B's elements:");
+        for (let i = 0; i < size2; i++) {
+            arrayB[i] = +prompt("a[" + i + "] = ");
+            console.log("a[" + i + "] = ", arrayB[i]);
+        }
+        const finalArray = arrayA.concat(arrayB);
+        console.log(arrayA);
+        console.log(arrayB);
+        console.log("Merged Array : ", finalArray);
+
+
+
+
+    </script>
+</body>
+
+</html>
